@@ -23,7 +23,6 @@ import Footer from "./components/footer";
 import ContactPage from "./components/contact";
 import { yellow } from "@mui/material/colors";
 import Skill from "./components/skill";
-import Image from "next/image";
 
 const IndexPage = () => {
   const emailAddress = "dodhydnkz24@gmail.com";
@@ -128,15 +127,7 @@ const IndexPage = () => {
                 </span>
               </Typography>
             </Stack>
-            <Image
-              alt="vektor"
-              src="/vektor.webp"
-              height={250}
-              width={250}
-              className="rounded-image"
-              style={{ borderRadius: "50%", marginTop: "12%" }}
-            />
-            {/* <img
+            <img
               src="../../vektor.webp"
               style={{
                 borderRadius: "50%",
@@ -144,7 +135,7 @@ const IndexPage = () => {
                 width: "30%",
                 marginTop: "12%",
               }}
-            /> */}
+            />
           </Stack>
         </div>
 
@@ -157,7 +148,7 @@ const IndexPage = () => {
                 color="primary"
                 variant="outlined"
                 component="a"
-                href="https://drive.google.com/file/d/14pfGHnxBCKgwS9UAov1YO-0G5VbbCY4Z/view?usp=drive_link"
+                href="#"
                 clickable
               />
               <Chip
