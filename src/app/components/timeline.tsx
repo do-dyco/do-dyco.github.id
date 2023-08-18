@@ -11,6 +11,7 @@ import FastfoodIcon from "@mui/icons-material/Fastfood";
 import LaptopMacIcon from "@mui/icons-material/LaptopMac";
 import Typography from "@mui/material/Typography";
 import { Avatar, Stack } from "@mui/material";
+import Image from "next/image";
 
 export default function CustomizedTimeline() {
   return (
@@ -27,10 +28,17 @@ export default function CustomizedTimeline() {
         <TimelineSeparator>
           <Avatar
             alt="ATT"
-            src="../../logo_pt/att.png"
             style={{ backgroundColor: "white", padding: 8 }}
             sx={{ width: 56, height: 56 }}
-          />
+          >
+            <Image
+              alt="ATT"
+              src={"/logo_pt/att.png"}
+              width={40}
+              height={40}
+              className="rounded-image"
+            />
+          </Avatar>
           <TimelineConnector />
 
           <TimelineConnector />
@@ -94,10 +102,17 @@ export default function CustomizedTimeline() {
         <TimelineSeparator>
           <Avatar
             alt="ATT"
-            src="../../logo_pt/tani.jpg"
             style={{ backgroundColor: "white", padding: 8 }}
             sx={{ width: 56, height: 56 }}
-          />
+          >
+            <Image
+              alt="ATT"
+              src={"/logo_pt/tani.jpg"}
+              width={40}
+              height={40}
+              className="rounded-image"
+            />
+          </Avatar>
           <TimelineConnector />
           <TimelineConnector />
         </TimelineSeparator>
@@ -136,10 +151,17 @@ export default function CustomizedTimeline() {
         <TimelineSeparator>
           <Avatar
             alt="iot"
-            src="../../logo_pt/iot.png"
             style={{ backgroundColor: "white", paddingTop: 5 }}
             sx={{ width: 56, height: 56 }}
-          />
+          >
+            <Image
+              alt="ATT"
+              src={"/logo_pt/iot.png"}
+              width={60}
+              height={60}
+              className="rounded-image"
+            />
+          </Avatar>
           <TimelineConnector />
 
           <TimelineConnector />
