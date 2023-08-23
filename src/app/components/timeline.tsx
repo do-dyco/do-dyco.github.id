@@ -27,7 +27,7 @@ export default function CustomizedTimeline() {
         <TimelineSeparator>
           <Avatar
             alt="ATT"
-            src="../../logo_pt/att.png"
+            src="./logo_pt/att.png"
             style={{ backgroundColor: "white", padding: 8 }}
             sx={{ width: 56, height: 56 }}
           />
@@ -94,7 +94,7 @@ export default function CustomizedTimeline() {
         <TimelineSeparator>
           <Avatar
             alt="ATT"
-            src="../../logo_pt/tani.jpg"
+            src="./logo_pt/tani.jpg"
             style={{ backgroundColor: "white", padding: 8 }}
             sx={{ width: 56, height: 56 }}
           />
@@ -136,7 +136,7 @@ export default function CustomizedTimeline() {
         <TimelineSeparator>
           <Avatar
             alt="iot"
-            src="../../logo_pt/iot.png"
+            src="./logo_pt/iot.png"
             style={{ backgroundColor: "white", paddingTop: 5 }}
             sx={{ width: 56, height: 56 }}
           />

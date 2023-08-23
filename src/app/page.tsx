@@ -38,27 +38,27 @@ const IndexPage = () => {
   }
   const itemData = [
     {
-      img: "../../project.png",
+      img: "./project.png",
       title: "Breakfast",
       rows: 3,
       cols: 2,
     },
     {
-      img: "../../project2.png",
+      img: "./project2.png",
       title: "Burger",
     },
     {
-      img: "../../project3.png",
+      img: "./project3.png",
       title: "Camera",
     },
     {
-      img: "../../project4.png",
+      img: "./project4.png",
       title: "Coffee",
       rows: 2,
       cols: 2,
     },
     {
-      img: "../../project5.png",
+      img: "./project5.png",
       title: "Hats",
       cols: 4,
       rows: 2,
@@ -67,33 +67,33 @@ const IndexPage = () => {
 
   const itemData2 = [
     {
-      img: "../../monitoring/monitoring_brg.png",
+      img: "./monitoring/monitoring_brg.png",
       title: "Breakfast",
       rows: 3,
       cols: 2,
     },
     {
-      img: "../../monitoring/monitoring_brg1.png",
+      img: "./monitoring/monitoring_brg1.png",
       title: "Burger",
     },
     {
-      img: "../../monitoring/monitoring_brg2.png",
+      img: "./monitoring/monitoring_brg2.png",
       title: "Camera",
     },
     {
-      img: "../../monitoring/monitoring_brg3.png",
+      img: "./monitoring/monitoring_brg3.png",
       title: "Coffee",
       rows: 2,
       cols: 2,
     },
     {
-      img: "../../monitoring/monitoring_brg4.png",
+      img: "./monitoring/monitoring_brg4.png",
       title: "Hats",
       cols: 2,
       rows: 2,
     },
     {
-      img: "../../monitoring/monitoring_brg5.png",
+      img: "./monitoring/monitoring_brg5.png",
       title: "Hats",
       cols: 2,
       rows: 2,
@@ -128,7 +128,7 @@ const IndexPage = () => {
               </Typography>
             </Stack>
             <img
-              src="../../vektor.webp"
+              src="./vektor.webp"
               style={{
                 borderRadius: "50%",
                 height: "30%",
