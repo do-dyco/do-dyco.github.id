@@ -44,6 +44,11 @@ const Navbar = () => {
           </ScrollLink>
         </Button>
         <Button color="inherit">
+          <ScrollLink to="experience" smooth={true} duration={500}>
+            Experience
+          </ScrollLink>
+        </Button>
+        <Button color="inherit">
           <ScrollLink to="contact" smooth={true} duration={500}>
             Contact
           </ScrollLink>

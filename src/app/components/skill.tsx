@@ -81,10 +81,13 @@ const Skills = () => {
 
   return (
     <div>
-      <Grid container spacing={2}>
+      <Grid container spacing={4}>
         {skillsData.map((skill, index) => (
           <Grid item xs={12} sm={4} md={2} key={index}>
-            <Paper className={`${skill.label.toLowerCase()}`}>
+            <Paper
+              className={`${skill.label.toLowerCase()}`}
+              style={{ background: "linear-gradient(#00306e,#000046)" }}
+            >
               {skill.icon}
             </Paper>
           </Grid>

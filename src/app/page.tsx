@@ -21,8 +21,10 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import ContactPhoneIcon from "@mui/icons-material/ContactPhone";
 import Footer from "./components/footer";
 import ContactPage from "./components/contact";
-import { yellow } from "@mui/material/colors";
 import Skill from "./components/skill";
+import Carousel from "./components/carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import About from "./components/about";
 
 const IndexPage = () => {
   const emailAddress = "dodhydnkz24@gmail.com";
@@ -39,27 +41,27 @@ const IndexPage = () => {
   const itemData = [
     {
       img: "./project.png",
-      title: "Breakfast",
+      title: "",
       rows: 3,
       cols: 2,
     },
     {
       img: "./project2.png",
-      title: "Burger",
+      title: "",
     },
     {
       img: "./project3.png",
-      title: "Camera",
+      title: "",
     },
     {
       img: "./project4.png",
-      title: "Coffee",
+      title: "",
       rows: 2,
       cols: 2,
     },
     {
       img: "./project5.png",
-      title: "Hats",
+      title: "",
       cols: 4,
       rows: 2,
     },
@@ -68,33 +70,33 @@ const IndexPage = () => {
   const itemData2 = [
     {
       img: "./monitoring/monitoring_brg.png",
-      title: "Breakfast",
+      title: "",
       rows: 3,
       cols: 2,
     },
     {
       img: "./monitoring/monitoring_brg1.png",
-      title: "Burger",
+      title: "",
     },
     {
       img: "./monitoring/monitoring_brg2.png",
-      title: "Camera",
+      title: "",
     },
     {
       img: "./monitoring/monitoring_brg3.png",
-      title: "Coffee",
+      title: "",
       rows: 2,
       cols: 2,
     },
     {
       img: "./monitoring/monitoring_brg4.png",
-      title: "Hats",
+      title: "",
       cols: 2,
       rows: 2,
     },
     {
       img: "./monitoring/monitoring_brg5.png",
-      title: "Hats",
+      title: "",
       cols: 2,
       rows: 2,
     },
@@ -121,9 +123,9 @@ const IndexPage = () => {
                 <span style={{ color: "yellow" }}>My Portofolio</span>
               </Typography>
               <Typography variant="body1" gutterBottom color="white">
-                Hi, I'm Dody,{" "}
+                Hi, I'm Dody{" "}
                 <span style={{ color: "yellow" }}>
-                  a passionate web & Mobile developer.
+                  and I've been crafting web and mobile solutions.
                 </span>
               </Typography>
             </Stack>
@@ -167,6 +169,11 @@ const IndexPage = () => {
           <Typography variant="body1" align="center" gutterBottom color="white">
             Check out some of my projects below:
           </Typography>
+          <Stack alignItems={"center"}>
+            <Grid mt={4} paddingLeft={90} justifyContent={"center"}>
+              <Carousel />
+            </Grid>
+          </Stack>
           <Stack direction="row" justifyContent="space-between">
             <Grid container spacing={2} justifyContent="center" sx={{ mt: 4 }}>
               <Grid item>
@@ -174,7 +181,6 @@ const IndexPage = () => {
                   sx={{ width: 500, height: 450 }}
                   variant="quilted"
                   cols={4}
-                  rowHeight={121}
                 >
                   {itemData.map((item) => (
                     <ImageListItem
@@ -192,14 +198,12 @@ const IndexPage = () => {
                 </ImageList>
               </Grid>
             </Grid>
-
             <Grid container spacing={2} justifyContent="center" sx={{ mt: 4 }}>
               <Grid item>
                 <ImageList
                   sx={{ width: 500, height: 450 }}
                   variant="quilted"
                   cols={4}
-                  rowHeight={121}
                 >
                   {itemData2.map((item) => (
                     <ImageListItem
@@ -219,18 +223,18 @@ const IndexPage = () => {
             </Grid>
           </Stack>
         </div>
+
         <div id="about">
-          <Stack mt={6}>
-            <Typography color={"white"} align="center" variant="h5">
-              Experience
-            </Typography>
-            <TimeLine />
-          </Stack>
+          <About />
         </div>
-        <div>
+        <div id="experience">
+          <Typography color={"white"} align="center" variant="h5" mt={8}>
+            Experience
+          </Typography>
+          <TimeLine />
           <Stack mt={6} spacing={4}>
             <Typography color={"white"} align="center" variant="h5">
-              Skill
+              Skills
             </Typography>
             <Skill />
           </Stack>
